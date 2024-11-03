@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - 3D & Code</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="CSS/registro.css">
+    <link rel="icon" type="image/png" sizes="16x16"  href="img/favicon-16x16.png">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Impresión 3D & Programación</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">contactanos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="QuienesSomos.html">¿Quiénes Somos?</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <div class="form-container p-4">
+                    <h2 class="mb-4">Formulario de Registro</h2>
+                    <form action="PHP/registrar.php" method="POST"> <!-- Cambiado aquí -->
+                        <div class="mb-3">
+                            <label for="fullName" class="form-label">Nombre completo:</label>
+                            <input type="text" class="form-control" id="fullName" name="nombre" placeholder="Nombre completo" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Correo electrónico:</label>
+                            <input type="email" class="form-control" id="email" name="correo" placeholder="ejemplo@correo.com" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Contraseña:</label>
+                            <input type="password" class="form-control" id="password" name="contrasena" placeholder="Contraseña" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="civilStatus" class="form-label">Estado civil:</label>
+                            <div>
+                                <input type="radio" id="soltero" name="estadoCivil" value="soltero" required>
+                                <label for="soltero">Soltero</label>
+                                <input type="radio" id="casado" name="estadoCivil" value="casado" required>
+                                <label for="casado">Casado</label>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="age" class="form-label">Edad:</label>
+                            <input type="number" class="form-control" id="age" name="edad" placeholder="Edad" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="city" class="form-label">Ciudad:</label>
+                            <select class="form-select" id="city" name="ciudad" required>
+                                <option value="" disabled selected>Selecciona tu ciudad</option>
+                                <option value="ciudad1">Medellín</option>
+                                <option value="ciudad2">Barrancabermeja</option>
+                                <option value="ciudad3">Fondo de Bikini</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="profession" class="form-label">Profesión:</label>
+                            <select class="form-select" id="profession" name="profesion" required>
+                                <option value="" disabled selected>Selecciona tu profesión</option>
+                                <option value="profesion1">Profesor</option>
+                                <option value="profesion2">Programador</option>
+                                <option value="profesion3">Payaso</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="additionalData" class="form-label">Datos adicionales:</label>
+                            <textarea class="form-control" id="additionalData" name="datosAdicionales" rows="3" placeholder="Escribe aquí..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn custom-button text-white">Registrarse</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

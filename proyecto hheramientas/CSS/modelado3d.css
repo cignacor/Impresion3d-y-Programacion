@@ -1,0 +1,92 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to bottom, #ffffff, #0056b3);
+    color: #333;
+}
+.container {
+    margin-top: 30px;
+    background: linear-gradient(to bottom, #ffffff, #e0e0e0);
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+h2 {
+    color: #333;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+    margin-top: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+p {
+    line-height: 1.6;
+    font-size: 1.1em;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+ul li {
+    background: url('https://placehold.co/10x10') no-repeat left center;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #343a40;
+    color: #fff;
+    margin-top: 30px;
+}
+
+.img-small {
+    max-width: 70%; 
+    height: auto; 
+    border-radius: 8px;
+    margin-left: 50px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #fff;
+}
+.navbar a {
+    color: #080808;
+    text-decoration: none;
+    margin: 0 10px;
+}
+.navbar a:hover {
+    text-decoration: underline;
+}
+.navbar .title-link {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.navbar .btn-modern {
+    background: linear-gradient(to right, #a4c1e0, #5f92c9);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 12px;
+}
+.navbar .btn-modern:hover {
+    background: linear-gradient(to right, #97b2cf, #4c75a1);
+    color: white;
+}

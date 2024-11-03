@@ -1,0 +1,18 @@
+body {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    min-height: 100vh;
+}
+.navbar {
+    background-color: #1f1e1e !important;
+}
+.form-container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.custom-button {
+    background-color: #5f6f83;
+}
+.custom-button:hover {
+    background-color: #566475;
+}

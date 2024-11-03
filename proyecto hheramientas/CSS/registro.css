@@ -1,0 +1,35 @@
+body {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    min-height: 100vh;
+}
+.navbar {
+    background-color: #1f1e1e !important;
+}
+.form-container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.custom-button {
+    background-color: #4a90e2;
+}
+.custom-button:hover {
+    background-color: #357ab8;
+}
+
+/* Estilos para los campos de entrada */
+input.form-control, 
+textarea.form-control, 
+select.form-select {
+    background-color: #f0f0f0; /* Color de fondo más oscuro */
+    border: 1px solid #ccc;
+    color: #333; /* Color del texto */
+}
+
+input.form-control:focus, 
+textarea.form-control:focus, 
+select.form-select:focus {
+    background-color: #e0e0e0; /* Color de fondo al enfocar */
+    border-color: #4a90e2; /* Color del borde al enfocar */
+    box-shadow: 0 0 5px rgba(74, 144, 226, 0.5); /* Sombra al enfocar */
+}
